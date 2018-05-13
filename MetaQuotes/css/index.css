@@ -1,0 +1,53 @@
+﻿body {
+    font-family: Segoe UI;
+    background-color: lightgrey;
+}
+
+* {
+    padding: 1px;
+}
+
+p {
+    padding: 1px;
+}
+
+.left {
+    margin: 15px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 15%;
+}
+
+.right {
+    margin: 1px;
+    position: absolute;
+    right: 1px;
+    top: 15px;
+    width: 85%;
+}
+
+.btn-search {
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+}
+
+.btn-search:hover {
+    background: rgba(255,255,255,.2);
+}
+
+.btn-search:active {
+    background: white;
+}
+
+.tbl-result {
+    padding: 2px;
+}

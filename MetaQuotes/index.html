@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html ng-app="SearchApp">
+<head>
+    <meta charset="utf-8">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div ng-controller="viewController" ng-init="data.mode='ip'">
+        <div class="left">
+            <div ng-repeat="button in modes">
+                <label>
+                    <input type="radio" ng-model="data.mode" value="{{button.value}}" name="modes" />
+                    {{button.label}}
+                </label>
+            </div>
+        </div>
+        <div class="right" ng-include="setFile()"></div>
+    </div>
+
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script type="text/javascript">
+        var myApp = angular.module('SearchApp', []);
+    </script>
+    <script src="js/controllers/search-controller.js"></script>
+    <script src="js/controllers/view-controller.js"></script>
+</body>
+</html>
